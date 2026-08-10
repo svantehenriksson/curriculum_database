@@ -89,6 +89,28 @@ Before broad downloading, verify:
 - Parser smoke test:
   - Parsed `28444489.json` into `data/parsed/parsed_records.jsonl` (`20789` records).
 
+### Run 4 (3 More Municipalities: Helsinki, Turku/Abo, Vaasa/Vasa)
+
+- Date: 2026-08-10 (UTC+3 local session)
+- Goal: add three municipalities with FI/SV local basic-education curricula where available.
+- City-level local OPS IDs fetched:
+  - Helsinki FI: `22890002`
+  - Helsinki SV: `22890003`
+  - Turku FI: `35439754`
+  - Abo SV: `22617371`
+  - Vaasa FI: `1283735`
+  - Vasa SV: `27446734`
+- Raw files saved:
+  - `data/raw/eperusteet-ylops/local/22890002.json`
+  - `data/raw/eperusteet-ylops/local/22890003.json`
+  - `data/raw/eperusteet-ylops/local/35439754.json`
+  - `data/raw/eperusteet-ylops/local/22617371.json`
+  - `data/raw/eperusteet-ylops/local/1283735.json`
+  - `data/raw/eperusteet-ylops/local/27446734.json`
+- Notes:
+  - Name search can return school-level and private-provider OPS entries; city-level records were selected manually by name and education type.
+  - All retrievals were logged to `data/raw/retrieval_log.jsonl`.
+
 ## Questions to Answer Next
 
 - How to robustly identify "current" national bases (selection rule by status/effective date)?
