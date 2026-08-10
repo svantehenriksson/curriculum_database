@@ -10,12 +10,21 @@ This repo now includes a minimal first-pass pipeline focused on provenance and r
 
 - `docs/mvp-contract.md`
 - `docs/first-implementation-checklist.md`
+- `docs/api-notes.md`
 - `scripts/mvp_pipeline.py`
+- `scripts/recon_openapi.py`
+
+### Create and use local virtual environment
+
+```bash
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install pytest
+```
 
 ### Run tests
 
 ```bash
-python -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
 ### Fetch one JSON source URL into raw storage
@@ -33,4 +42,10 @@ python scripts/mvp_pipeline.py fetch-url \
 python scripts/mvp_pipeline.py parse-json \
   --raw-file "data/raw/eperusteet/recon/url_<hash>.json" \
   --source-system "eperusteet"
+```
+
+### Probe likely OpenAPI endpoints
+
+```bash
+.\.venv\Scripts\python.exe scripts/recon_openapi.py
 ```
