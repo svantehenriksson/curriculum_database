@@ -43,6 +43,7 @@ Before broad downloading, verify:
 - Canonical docs endpoint selected: `https://opetushallitus.github.io/eperusteet` (landing page only, for now)
 - Notes:
   - `https://opetushallitus.github.io/eperusteet` returned HTTP 200.
+  - Landing-page HTML was preserved under `data/raw/eperusteet/openapi/`.
   - The tested direct `swagger.json` and `openapi.json` candidates returned HTTP 404.
   - The tested `eperusteet.opintopolku.fi/api/external/*` docs candidates returned HTTP 404.
   - Recon log saved to `data/raw/eperusteet/openapi/recon_results.jsonl`.
