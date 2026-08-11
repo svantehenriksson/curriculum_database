@@ -55,3 +55,9 @@ python scripts/mvp_pipeline.py parse-json \
 ```bash
 .\.venv\Scripts\python.exe scripts/extract_math_topic_candidates.py
 ```
+
+### Cluster topics and build consensus matrix (pass 3)
+
+```bash
+.\.venv\Scripts\python.exe scripts/cluster_math_topics_pass3.py
+```
