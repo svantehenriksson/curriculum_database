@@ -49,3 +49,9 @@ python scripts/mvp_pipeline.py parse-json \
 ```bash
 .\.venv\Scripts\python.exe scripts/recon_openapi.py
 ```
+
+### Extract math topic candidates (grades 7-9, pass 2)
+
+```bash
+.\.venv\Scripts\python.exe scripts/extract_math_topic_candidates.py
+```
