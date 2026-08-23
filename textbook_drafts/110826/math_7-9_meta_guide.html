@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meta Guide: Teaching Math 7-9 in Finland</title>
+    <style>
+      :root {
+        --ink: #17202a;
+        --muted: #4f5b67;
+        --bg: #f5f7fa;
+        --panel: #ffffff;
+        --line: #d8dee6;
+        --accent: #1f5c9a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.45;
+      }
+      header {
+        background: #17395f;
+        color: #fff;
+        padding: 18px 22px;
+      }
+      header h1 { margin: 0; font-size: 1.45rem; }
+      header p { margin: 8px 0 0; color: #dce8f5; }
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 18px;
+      }
+      section {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin-bottom: 14px;
+      }
+      h2 { margin-top: 0; color: #123b65; font-size: 1.22rem; }
+      h3 { margin-bottom: 8px; color: #174c7f; font-size: 1.03rem; }
+      .toc a { display: inline-block; margin: 2px 10px 6px 0; color: var(--accent); text-decoration: none; }
+      .toc a:hover { text-decoration: underline; }
+      .note {
+        border-left: 4px solid #85a9ce;
+        background: #f1f6fc;
+        padding: 10px 12px;
+        margin: 10px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+      }
+      th, td {
+        border: 1px solid var(--line);
+        padding: 8px 9px;
+        vertical-align: top;
+        text-align: left;
+      }
+      th { background: #eef3f9; }
+      .small { color: var(--muted); font-size: 0.92rem; }
+      .badge {
+        display: inline-block;
+        font-size: 0.8rem;
+        border: 1px solid #9db4cf;
+        border-radius: 999px;
+        padding: 2px 8px;
+        margin-left: 8px;
+        color: #1e4f83;
+      }
+      details {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 8px 10px;
+        margin-top: 8px;
+        background: #fbfcfe;
+      }
+      summary { cursor: pointer; font-weight: 700; }
+      .appendix-controls { margin: 8px 0; }
+      button {
+        background: #1f5c9a;
+        color: #fff;
+        border: 0;
+        border-radius: 5px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+      button:hover { background: #184b7f; }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #f8fafc;
+        border: 1px solid #e0e6ee;
+        border-radius: 6px;
+        padding: 10px;
+        max-height: 420px;
+        overflow: auto;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.82rem;
+      }
+      code { background: #eff3f8; padding: 1px 4px; border-radius: 4px; }
+      .warn {
+        border-left: 4px solid #be7f18;
+        background: #fff8eb;
+        padding: 10px 12px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meta Guide: Teaching Mathematics in Grades 7-9 (Finland)</h1>
+      <p>
+        Evidence-based synthesis from national basis + selected local curricula
+        (Kirkkonummi/Kyrkslätt, Helsinki, Turku/Åbo, Vaasa/Vasa).
+      </p>
+    </header>
+
+    <main>
+      <section id="toc">
+        <h2>Contents</h2>
+        <div class="toc">
+          <a href="#what-done">What This File Is Based On</a>
+          <a href="#goals-vs-content">Why <em>tavoitteet</em> + <em>sisältöalueet</em></a>
+          <a href="#concrete-national">National Curriculum -> Concrete Teaching List</a>
+          <a href="#city-summaries">City Curriculum Summaries</a>
+          <a href="#irreconcilable">Irreconcilable Differences (Pacing/Content)</a>
+          <a href="#suggestions">Suggestions A-E</a>
+          <a href="#appendices">Full Verbatim Appendices</a>
+        </div>
+      </section>
+
+      <section id="what-done">
+        <h2>What This File Is Based On</h2>
+        <p class="small">
+          Source products in this repo:
+          <code>data/derived/math_grade_7_9_first_pass.md</code>,
+          <code>data/derived/math_topic_candidates_7_9_pass2.jsonl</code>,
+          <code>data/derived/math_topic_consensus_7_9_pass3.md</code>,
+          <code>data/derived/math_topic_consensus_matrix_7_9_pass3.jsonl</code>.
+        </p>
+        <p class="small">
+          Extraction/normalization scripts:
+          <code>scripts/extract_math_7_9.py</code>,
+          <code>scripts/extract_math_topic_candidates.py</code>,
+          <code>scripts/cluster_math_topics_pass3.py</code>.
+        </p>
+        <div class="note">
+          This is not a legal or official interpretation. It is a reproducible
+          working synthesis for textbook design, preserving traceability to raw sources.
+        </div>
+      </section>
+
+      <section id="goals-vs-content">
+        <h2>Why the curriculum uses both <em>tavoitteet</em> and <em>sisältöalueet</em></h2>
+        <p>
+          In plain language:
+        </p>
+        <ul>
+          <li>
+            <strong><em>Tavoitteet</em></strong> answer: <em>what kind of learner capability should be built?</em>
+            (reasoning, communication, problem solving, digital use, responsibility, etc.)
+          </li>
+          <li>
+            <strong><em>Sisältöalueet</em></strong> answer: <em>what mathematical domain/content should be taught?</em>
+            (numbers, algebra, functions, geometry, statistics/probability).
+          </li>
+        </ul>
+        <p>
+          If only objectives existed, teachers could know the skill direction but not the
+          content envelope. If only content areas existed, teachers might "cover chapters"
+          without building mathematical habits and competencies.
+        </p>
+        <p>
+          So the structure is intentional: <strong>competency axis + content axis</strong>.
+          Good teaching units should explicitly map both.
+        </p>
+      </section>
+
+      <section id="concrete-national">
+        <h2>National curriculum translated into concrete teaching obligations (Grades 7-9)</h2>
+        <p>
+          National 7-9 mathematics is organized into six content areas:
+          S1 thinking/methods, S2 numbers/operations, S3 algebra, S4 functions, S5 geometry,
+          S6 data/statistics/probability.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>National abstraction</th>
+              <th>Concrete classroom obligations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T1-T9 (motivation, responsibility, communication, ICT, critical thinking)</td>
+              <td>
+                Teach explicit solution writing, peer explanation, reflection routines,
+                and regular tool-based problem solving (not only pen-and-paper procedures).
+              </td>
+            </tr>
+            <tr>
+              <td>T10-T13 (mental arithmetic, rational/real numbers, percentages)</td>
+              <td>
+                Run ongoing number fluency work: rational operations, estimates, percent and
+                percent-change applications in context.
+              </td>
+            </tr>
+            <tr>
+              <td>T14-T15 (unknown/variable, equations, function concept + graphing)</td>
+              <td>
+                Build algebra progression from variable meaning to equation solving and function
+                interpretation in tables/graphs/formulas.
+              </td>
+            </tr>
+            <tr>
+              <td>T16-T18 (geometry concepts, right-triangle/circle properties, area/volume)</td>
+              <td>
+                Teach angle-line language, triangle/circle properties, and applied area-volume tasks
+                with unit discipline.
+              </td>
+            </tr>
+            <tr>
+              <td>T19-T20 (statistics/probability + algorithmic/programming thinking)</td>
+              <td>
+                Include statistical summaries, probability calculations, and simple algorithmic/programming
+                tasks linked to math problems.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note">
+          Key implication: national basis is broad and integrated. Local curricula decide
+          much of the grade-by-grade pacing detail.
+        </div>
+      </section>
+
+      <section id="city-summaries">
+        <h2>City curriculum summaries: how concrete are they?</h2>
+        <p class="small">
+          The table below uses current extracted signals (objective/content item density and
+          grade allocation shape). "Concrete" means explicit grade-level instructional targets.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>City perspective</th>
+              <th>Pacing signature (7 -> 8 -> 9)</th>
+              <th>Concreteness signal</th>
+              <th>Interpretive comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kirkkonummi (FI)</td>
+              <td>16 -> 18 -> 20 objectives</td>
+              <td>Moderate-high, but compact topic statements</td>
+              <td>
+                Clear local grade progression; stronger concentration toward grade 9.
+                Practical and teachable, but not always granular in micro-topic wording.
+              </td>
+            </tr>
+            <tr>
+              <td>Kyrkslätt (SV)</td>
+              <td>14 -> 16 -> 20 objectives</td>
+              <td>Moderate, with explicit digital/programming language</td>
+              <td>
+                Most back-loaded profile among sampled locals. Distinct emphasis on algorithmic
+                and digital habits, plus independent problem solving language.
+              </td>
+            </tr>
+            <tr>
+              <td>Helsinki/Helsingfors (city-level FI/SV)</td>
+              <td>20 -> 19 -> 19 objectives</td>
+              <td>High structural stability</td>
+              <td>
+                Very balanced pacing. Feels close to a canonical city implementation pattern,
+                suitable as a baseline textbook spine.
+              </td>
+            </tr>
+            <tr>
+              <td>Turku/Åbo (city-level FI/SV)</td>
+              <td>18 -> 19 -> 19 objectives</td>
+              <td>Mixed: some concrete math, some transversal phrasing</td>
+              <td>
+                Good continuity across grades, but some objective text is broader competency wording,
+                requiring careful conversion to concrete lesson targets.
+              </td>
+            </tr>
+            <tr>
+              <td>Vaasa/Vasa (city-level FI/SV)</td>
+              <td>17/18 -> 18/19 -> 20/20 objectives</td>
+              <td>Moderate, compact articulation</td>
+              <td>
+                Also back-loaded into grade 9. Content breadth is present, but many requirements
+                are concise and need unpacking into teachable sub-objectives.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="irreconcilable">
+        <h2>Short summary of irreconcilable differences (with current evidence)</h2>
+        <ul>
+          <li>
+            <strong>Pacing conflict:</strong> Some locales are balanced (Helsinki style), others are clearly
+            grade-9-heavy (Kirkkonummi/Kyrkslätt/Vaasa patterns). A single rigid sequencing cannot fully match both.
+          </li>
+          <li>
+            <strong>Specificity conflict:</strong> Some curricula specify concrete grade-level math actions,
+            while others phrase many targets as broader competencies (communication/responsibility/critical review).
+          </li>
+          <li>
+            <strong>Digital/programming intensity conflict:</strong> Some local texts foreground digital tools
+            and algorithmic thinking more explicitly than others.
+          </li>
+          <li>
+            <strong>Topic granularity conflict:</strong> In some places, geometry/algebra are fine-grained;
+            in others, statements remain high-level and require teacher decomposition.
+          </li>
+        </ul>
+        <div class="note">
+          Practical conclusion: design a common core sequence plus municipal pacing adapters,
+          not one immutable chapter order for all.
+        </div>
+      </section>
+
+      <section id="suggestions">
+        <h2>Suggestions A-E: textbook outline strategies within curriculum guardrails</h2>
+        <h3>Suggestion A - Stable Core + Pacing Adapter</h3>
+        <p>
+          Keep one core 7-9 chapter architecture, but provide municipal pacing maps (Balanced vs Back-loaded).
+        </p>
+
+        <h3>Suggestion B - Dual-Axis Chapter Template</h3>
+        <p>
+          Every chapter explicitly has: (1) content targets (<em>sisältöalueet</em>), (2) capability targets (<em>tavoitteet</em>).
+          This directly mirrors how OPS is structured.
+        </p>
+
+        <h3>Suggestion C - Core / Flex / Bridge Layers</h3>
+        <p>
+          Mark each topic as Core (must teach), Flex (moveable between grades), or Bridge (supports 2nd stage readiness).
+          This helps reconcile city pacing differences.
+        </p>
+
+        <h3>Suggestion D - Competency Weaving, Not Add-On Pages</h3>
+        <p>
+          Integrate digital tools, communication, and reasoning into content chapters; do not isolate them as detached appendices.
+        </p>
+
+        <h3>Suggestion E - Bilingual Semantic Pairing</h3>
+        <p>
+          Build FI/SV term pair tables per chapter so teachers can align intent even when phrasing differs across language versions.
+        </p>
+      </section>
+
+      <section id="appendices">
+        <h2>Appendices: full verbatim source texts</h2>
+        <div class="warn">
+          The sections below load full raw files from local repo storage exactly as retrieved.
+          This is for internal curriculum analysis workflow and provenance tracking.
+        </div>
+        <p class="small">
+          Order requested: national first, then city curricula.
+        </p>
+
+        <details>
+          <summary>Appendix 1 - National basic education curriculum raw JSON (ID 419550)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet/national/419550.json" data-target="ap1">Load full text</button>
+          </div>
+          <pre id="ap1">Not loaded yet.</pre>
+        </details>
+
+        <details>
+          <summary>Appendix 2 - Kirkkonummi FI local raw JSON (ID 28444489)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet-ylops/local/28444489.json" data-target="ap2">Load full text</button>
+          </div>
+          <pre id="ap2">Not loaded yet.</pre>
+        </details>
+
+        <details>
+          <summary>Appendix 3 - Kyrkslätt SV local raw JSON (ID 32965859)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet-ylops/local/32965859.json" data-target="ap3">Load full text</button>
+          </div>
+          <pre id="ap3">Not loaded yet.</pre>
+        </details>
+
+        <details>
+          <summary>Appendix 4 - Helsinki FI local raw JSON (ID 22890002)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet-ylops/local/22890002.json" data-target="ap4">Load full text</button>
+          </div>
+          <pre id="ap4">Not loaded yet.</pre>
+        </details>
+
+        <details>
+          <summary>Appendix 5 - Turku FI local raw JSON (ID 35439754)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet-ylops/local/35439754.json" data-target="ap5">Load full text</button>
+          </div>
+          <pre id="ap5">Not loaded yet.</pre>
+        </details>
+
+        <details>
+          <summary>Appendix 6 - Vaasa FI local raw JSON (ID 1283735)</summary>
+          <div class="appendix-controls">
+            <button data-load="../../data/raw/eperusteet-ylops/local/1283735.json" data-target="ap6">Load full text</button>
+          </div>
+          <pre id="ap6">Not loaded yet.</pre>
+        </details>
+      </section>
+    </main>
+
+    <script>
+      async function loadAppendix(path, targetId, button) {
+        const pre = document.getElementById(targetId);
+        pre.textContent = "Loading...";
+        button.disabled = true;
+        try {
+          const res = await fetch(path);
+          if (!res.ok) {
+            throw new Error("HTTP " + res.status + " while loading " + path);
+          }
+          const text = await res.text();
+          pre.textContent = text;
+        } catch (err) {
+          pre.textContent = "Failed to load file: " + err.message;
+        } finally {
+          button.disabled = false;
+        }
+      }
+
+      document.querySelectorAll("button[data-load]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          loadAppendix(btn.dataset.load, btn.dataset.target, btn);
+        });
+      });
+    </script>
+  </body>
+</html>

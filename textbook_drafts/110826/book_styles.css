@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background: #f7f8fa;
+}
+
+.topbar {
+  background: #1f3a5f;
+  color: #ffffff;
+  padding: 14px 18px;
+  border-bottom: 3px solid #162b47;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: calc(100vh - 82px);
+}
+
+.sidebar {
+  border-right: 1px solid #d7dce2;
+  background: #ffffff;
+  padding: 14px;
+  overflow: auto;
+}
+
+.sidebar h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.grade-block {
+  margin-bottom: 14px;
+}
+
+.grade-title {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #1f3a5f;
+}
+
+.chapter-link {
+  display: block;
+  text-decoration: none;
+  color: #1b1f24;
+  font-size: 0.88rem;
+  line-height: 1.35;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-bottom: 3px;
+}
+
+.chapter-link:hover {
+  background: #eef3fa;
+}
+
+.chapter-link.active {
+  background: #dbe9ff;
+  font-weight: 700;
+}
+
+.content {
+  padding: 20px;
+}
+
+#chapter-view {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+  padding: 20px 22px;
+}
+
+#chapter-view h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+#chapter-view h3 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.meta {
+  color: #4d5b6a;
+  font-size: 0.9rem;
+}
+
+.note {
+  background: #f5f8fc;
+  border-left: 4px solid #6f8fb8;
+  padding: 10px 12px;
+  margin: 12px 0;
+}
+
+.image-idea {
+  border: 1px dashed #8aa1bf;
+  background: #f9fbff;
+  padding: 10px 12px;
+  margin: 10px 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.exercise {
+  border: 1px solid #d8dee8;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 10px 0;
+  background: #fbfdff;
+}
+
+.placeholder {
+  color: #4f5f72;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #d7dce2;
+    max-height: 42vh;
+  }
+}
