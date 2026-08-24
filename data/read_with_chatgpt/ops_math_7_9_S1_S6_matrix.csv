@@ -1,0 +1,91 @@
+﻿content_area,content_area_name,ops_item,ops_status,plain_meaning,minimum_competence,application,theory,example
+S1,Ajattelun taidot ja menetelmät,Säännönmukaisuudet ja riippuvuudet,harjoitellaan,Find patterns and relationships,Recognise a pattern and describe its rule,Predicting what happens next,"Pattern, dependency, variable","3, 7, 11, 15… What is term 20?"
+S1,Ajattelun taidot ja menetelmät,Vaihtoehtojen lukumäärä,pohditaan ja määritetään,Count possible alternatives,Systematically count combinations,"Choices, schedules, passwords, probability",Systematic listing/tree principle,3 shirts × 2 trousers = 6 outfits
+S1,Ajattelun taidot ja menetelmät,Päättely ja perusteleminen,vahvistetaan,Explain why an answer is true,Give a coherent mathematical reason rather than just an answer,Central to all mathematics,"Implication, counterexample, logical reasoning",Explain why odd + odd is even
+S1,Ajattelun taidot ja menetelmät,Matemaattisen tekstin tulkinta ja tuottaminen,harjoitellaan,Read and write mathematics,Translate between words and mathematical notation,"Problems, science, finance",Mathematical notation/language,“Five less than twice x” → 2x-5
+S1,Ajattelun taidot ja menetelmät,Matemaattinen todistaminen,tutustutaan perusteisiin,Understand the idea of proof,Follow and produce a simple argument,Why mathematics gives certainty,Assumptions → logical steps → conclusion,Why the sum of two even numbers is even
+S1,Ajattelun taidot ja menetelmät,Väitteiden totuusarvo,harjoitellaan,Decide whether statements are true,Test a claim and find counterexamples,Critical reasoning,"True/false, counterexample",“All prime numbers are odd.”
+S1,Ajattelun taidot ja menetelmät,Algoritminen ajattelu,syvennetään,Turn a procedure into exact steps,Construct/follow an unambiguous procedure,Programming and systematic problem-solving,"Algorithm, sequence, condition, repetition",Procedure for finding the largest of three numbers
+S1,Ajattelun taidot ja menetelmät,Ohjelmointi,ohjelmoidaan,Express algorithms as computer programs,Write simple programs implementing mathematical ideas,"Automation, simulation","Variables, loops, conditions",Program that lists multiples of 7
+S1,Ajattelun taidot ja menetelmät,Ohjelmistot matematiikassa,hyödynnetään,Use computers as mathematical tools,Use appropriate software to investigate/solve problems,Real-world mathematics and data,Depends on task,Plot y=2x-3 digitally
+S2,Luvut ja laskutoimitukset,Negatiiviset luvut,harjoitellaan,Calculate below zero,Perform four basic operations involving negative numbers,"Temperature, debt, height relative to sea level","Number line, signs",-7+12=5
+S2,Luvut ja laskutoimitukset,Murtolukulaskenta,vahvistetaan,Calculate reliably with fractions,"Add, subtract, multiply and divide fractions","Portions, ratios, probability","Equivalent fractions, reciprocal",2/3 ÷ 4/5
+S2,Luvut ja laskutoimitukset,Vastaluku,opitaan käsite,Opposite point across zero,Find a number's opposite,Signed quantities,Number line,opposite of -8 = 8
+S2,Luvut ja laskutoimitukset,Käänteisluku,opitaan käsite,Number which produces 1 when multiplied by original,Find reciprocals and understand their use in division,"Fractions, algebra",Multiplicative inverse,reciprocal of 3/4 = 4/3
+S2,Luvut ja laskutoimitukset,Itseisarvo,opitaan käsite,Distance from zero regardless of direction,Evaluate simple absolute values,Distance/error/deviation,Number line,|-12|=12
+S2,Luvut ja laskutoimitukset,Reaaliluvut,laajennetaan lukualuetta,Include rational and irrational numbers,Understand where familiar numbers fit in the real-number system,Needed for roots and continuous quantities,"Natural, integer, rational, irrational, real",Is √2 rational?
+S2,Luvut ja laskutoimitukset,Jaollisuus,käsitellään,Determine when integers divide exactly,Apply basic divisibility reasoning,"Fractions, factors, number theory",Divisor/multiple,Is 378 divisible by 9?
+S2,Luvut ja laskutoimitukset,Alkutekijät,hajotetaan,Break integers into prime factors,Produce a prime factorisation,"Simplifying fractions, structure of integers",Prime numbers,84=2²·3·7
+S2,Luvut ja laskutoimitukset,Desimaaliluvut,syvennetään,Calculate accurately with decimals,Use decimals in arithmetic,"Money, measurement",Place value,4.75×1.2
+S2,Luvut ja laskutoimitukset,Tarkka ja likiarvo,vahvistetaan,Distinguish exact answers from approximations,Know when a result has been rounded,Measurement and science,Precision,π versus 3.14
+S2,Luvut ja laskutoimitukset,Pyöristäminen,vahvistetaan,Give sensible approximate values,Round to specified/useful precision,"Measurements, estimates",Place value/significant precision,18.476 → 18.5
+S2,Luvut ja laskutoimitukset,Prosentti,vahvistetaan,Understand “per hundred”,"Convert between percentages, fractions and decimals",Ubiquitous everyday numeracy,Ratio to 100,15% = 0.15
+S2,Luvut ja laskutoimitukset,Prosenttiosuus,harjoitellaan,Find what percentage one amount is of another,Calculate a/b×100%,"Surveys, statistics",Part/whole,18 of 60 = 30%
+S2,Luvut ja laskutoimitukset,Prosenttiarvo,harjoitellaan,Find a percentage of an amount,Calculate p% of x,"VAT, discounts, interest",Multiplication by decimal factor,15% of €80
+S2,Luvut ja laskutoimitukset,Perusarvo,harjoitellaan,Work backwards from percentage,Recover the original whole,"Original price, population",Inverse operation,€24 is 30%; what is 100%?
+S2,Luvut ja laskutoimitukset,Muuttunut arvo,harjoitellaan,Calculate value after percentage change,Apply increase/decrease factors,"Price changes, interest",1 ± p/100,€80 increased 12%
+S2,Luvut ja laskutoimitukset,Muutosprosentti,harjoitellaan,Express a change relative to starting value,Calculate percentage increase/decrease,"Economics, population, measurements",Change/original,50 → 60 = +20%
+S2,Luvut ja laskutoimitukset,Vertailuprosentti,harjoitellaan,Compare two quantities proportionally,Say how many percent larger/smaller one is,"Prices, salaries, statistics",Reference quantity matters,How much larger is 120 than 100?
+S2,Luvut ja laskutoimitukset,Potenssit,harjoitellaan,Repeated multiplication and integer exponents,Calculate and manipulate basic powers,"Scale, science, exponential quantities","Base/exponent, negative exponent",2^-3 = 1/8
+S2,Luvut ja laskutoimitukset,Neliöjuuri,opitaan,Reverse squaring,Calculate/use square roots,"Geometry, Pythagoras",x²=a,√81=9
+S3,Algebra,Muuttuja,opitaan,Letter represents a number/quantity,Understand and use variables,Generalising relationships,Variable vs unknown,p=2l+2w
+S3,Algebra,Lausekkeen arvo,opitaan laskemaan,Substitute numbers into formulas,Evaluate expressions,Formulas everywhere,"Substitution, operation order","3x²-2, x=4"
+S3,Algebra,Lausekkeiden sieventäminen,harjoitellaan,Rewrite an expression more simply without changing it,Combine like terms etc.,Makes algebra manageable,"Terms, coefficients",3x+5+2x-1=5x+4
+S3,Algebra,Potenssilausekkeet,harjoitellaan,Manipulate powers containing variables,Simplify elementary power expressions,Algebra/science,Exponent rules,x²x³=x⁵
+S3,Algebra,Polynomit,tutustutaan,Expressions made from sums of powers of variables,Recognise polynomial structure,Foundation for later algebra,"Term, coefficient, degree",3x²-2x+7
+S3,Algebra,Polynomien yhteen- ja vähennyslasku,harjoitellaan,Combine polynomials,Add/subtract like terms correctly,Algebraic modelling,Like terms,(3x²+x)-(x²-4x)
+S3,Algebra,Polynomien kertolasku,harjoitellaan,Multiply algebraic expressions,Expand elementary products,Geometry/formulas/later algebra,Distributive law,3x(x+4)
+S3,Algebra,Lausekkeen muodostaminen,harjoitellaan,Translate a situation into algebra,Construct an expression from words/data,Mathematical modelling,Variables and operations,Taxi costs €5 + €2/km → 5+2x
+S3,Algebra,1. asteen yhtälö,muodostetaan ja ratkaistaan,Find an unknown appearing linearly,Form and solve linear equations,"Unknown prices, distances, ages",Equality and inverse operations,3x+5=26
+S3,Algebra,Vaillinainen 2. asteen yhtälö,muodostetaan ja ratkaistaan,Solve simple equations containing x²,Solve specified simple quadratic forms,Geometry,Squares/roots/factoring as applicable,x²=49
+S3,Algebra,Yhtälöpari,ratkaistaan,Find two unknowns satisfying two equations,Solve graphically and algebraically,Two simultaneous constraints,Intersection/substitution/elimination,"x+y=10, x-y=2"
+S3,Algebra,1. asteen epäyhtälö,tutustutaan ja ratkaistaan,Find a range rather than one exact answer,Solve simple linear inequalities,Budgets/limits,"Inequality signs, number line",3x+2<14
+S3,Algebra,Lukujonot,syvennetään,Describe and construct number sequences,Identify/generate rules,"Patterns, growth",Term/index/rule,"5, 8, 11,…"
+S3,Algebra,Verranto,käytetään,Solve equal-ratio problems,Set up and solve proportions,"Scale, recipes, speed",Equivalent ratios,3 kg costs €12; 5 kg costs ?
+S4,Funktiot,Suureiden riippuvuus,kuvataan,One quantity changes when another changes,Identify dependent quantities,Nearly all mathematical modelling,Variables,distance depends on time
+S4,Funktiot,Graafinen esitys,kuvataan,Show a relationship as a graph,Plot/read values,Data and trends,"Axes, coordinates, scale",time–temperature graph
+S4,Funktiot,Algebrallinen esitys,kuvataan,Show same relationship with formula,Connect formula to situation/graph,Modelling,Variables/formula,C=5+2x
+S4,Funktiot,Suoraan verrannollisuus,tutkitaan,Doubling input doubles output,Recognise/use y=kx,"Unit price, constant speed",Proportionality constant,€3/kg → C=3m
+S4,Funktiot,Kääntäen verrannollisuus,tutkitaan,Increasing one quantity decreases the other reciprocally,Recognise/use y=k/x,"Shared work, fixed-distance travel",Constant product,speed doubles → travel time halves
+S4,Funktiot,Funktio,opitaan käsite,Rule giving an output for an input,Understand basic function notation/idea,General model of dependency,Input/output,f(x)=2x+1
+S4,Funktiot,Suora,piirretään,Graph a linear relationship,Draw line from equation/data,Constant rates,Coordinates,y=2x-3
+S4,Funktiot,Paraabeli,piirretään,Graph a simple quadratic relationship,Recognise/draw basic parabola,"Projectile/area models, later math",y=ax²+… concept,y=x²
+S4,Funktiot,Kulmakerroin,opitaan,How quickly a line rises/falls,Determine/interpret slope,"Speed, €/unit, rate of change",Δy/Δx,slope 3 = y rises 3 per x
+S4,Funktiot,Vakiotermi,opitaan,Starting value when x=0,Read/interpret intercept,Fixed fees + variable cost,Linear equation,€5 starting fee in 5+2x
+S4,Funktiot,Kasvaminen/väheneminen,tulkitaan,Tell where output goes up/down,Read trends from graphs,Data interpretation,Direction along x-axis,Where does graph decrease?
+S4,Funktiot,Funktion nollakohta,määritetään,Input where output equals zero,Find/read simple zeros,"Break-even, crossing points",f(x)=0,2x-6=0
+S5,Geometria,"Piste, jana, suora, kulma",syvennetään,Basic geometric objects,Identify/use them accurately,Language of geometry,Definitions,distinguish line from segment
+S5,Geometria,Viiva ja puolisuora,tutustutaan,Curve/general line and ray,Recognise/use concepts,Geometry,Definitions,angle sides are rays
+S5,Geometria,Suorien ja kulmien ominaisuudet,tutkitaan,Relationships between lines and angles,Calculate unknown angles,"Construction, surveying","Parallel/perpendicular, angle relations",angles formed by parallel lines
+S5,Geometria,Monikulmiot,tutkitaan,Properties of polygons,Recognise/use basic polygon properties,"Design, construction","Sides, vertices, angles",interior angles of triangle
+S5,Geometria,Yhdenmuotoisuus,vahvistetaan,"Same shape, possibly different size",Use scale relationships,"Maps, models, indirect measurement",Corresponding sides/angles,scale 1:100
+S5,Geometria,Yhtenevyys,vahvistetaan,Exactly same shape and size,Recognise congruent figures,Geometry/proof,Correspondence,congruent triangles
+S5,Geometria,Geometriset konstruktiot,harjoitellaan,Construct exact figures,Perform elementary compass/ruler-type constructions,"Design, geometric reasoning",Bisectors etc.,perpendicular bisector
+S5,Geometria,Pythagoraan lause,opitaan käyttämään,Relate sides of right triangle,Find missing side,Distance/construction,a²+b²=c²,ladder against wall
+S5,Geometria,Pythagoraan käänteislause,opitaan käyttämään,Test whether triangle is right-angled,Apply converse,Construction/checking squareness,Converse logic,"sides 3,4,5"
+S5,Geometria,Trigonometriset funktiot,opitaan käyttämään,Relate angle to side ratios,Solve right triangles,Heights/distances/surveying,"sin, cos, tan",height from angle and distance
+S5,Geometria,Kehäkulma ja keskuskulma,opitaan käsitteet,Angles associated with a circle,Recognise/use their basic relationship,Circle geometry,Arc and angle relationship,central vs inscribed angle
+S5,Geometria,Thaleen lause,tutustutaan,Diameter subtends a right angle,Recognise/use basic result,Circle geometry,Semicircle geometry,triangle drawn across diameter
+S5,Geometria,Monikulmion piiri,lasketaan,Distance around polygon,Calculate perimeter,Fencing/material,Side lengths,fencing a garden
+S5,Geometria,Monikulmion pinta-ala,lasketaan,Area inside polygon,Calculate common areas,Flooring/land,Area formulas/decomposition,trapezoid area
+S5,Geometria,Ympyrän piiri,lasketaan,Circumference,Calculate from radius/diameter,"Wheels, circular objects","π, radius, diameter",circumference of 70 cm wheel
+S5,Geometria,Ympyrän pinta-ala,lasketaan,Area of circle,Calculate area,Materials/land,πr²,pizza area
+S5,Geometria,Kaaren pituus,lasketaan,Part of circumference,Calculate arc length,Curved paths/components,Fraction of full angle,60° arc
+S5,Geometria,Sektorin pinta-ala,lasketaan,Wedge-shaped part of circle,Calculate sector area,"Design, rotating systems",Fraction of circle,45° sector
+S5,Geometria,Avaruuskappaleet,tutkitaan,Understand 3-D shapes,Interpret their dimensions/properties,Containers/buildings,Faces/surfaces/sections,identify cylinder dimensions
+S5,Geometria,Pallo,lasketaan,Sphere measurements,Calculate surface area and volume,Balls/tanks,Sphere formulas,radius 5 cm sphere
+S5,Geometria,Lieriö,lasketaan,Cylinder measurements,Calculate surface area and volume,Cans/tanks,Base × height etc.,water tank
+S5,Geometria,Kartio,lasketaan,Cone measurements,Calculate surface area and volume,Funnels/conical objects,Cone formulas,ice-cream cone
+S5,Geometria,Mittayksiköt ja muunnokset,vahvistetaan/laajennetaan,Convert measurements correctly,"Convert length, area, volume etc.",Essential practical numeracy,Powers of conversion factors,"2.5 m² = 25,000 cm²"
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Tiedon kerääminen,syvennetään,Obtain data systematically,Collect usable observations,Surveys/experiments,Population/sample/measurement basics,survey class travel times
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Tiedon jäsentäminen,syvennetään,Organise raw data,Make tables/categories,Any data analysis,Variables/categories,frequency table
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Tiedon analysointi,syvennetään,Extract conclusions from data,Describe what dataset says,"Science, society, media",Summary statistics/comparison,Which class performed better?
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Keskiarvo,vahvistetaan,Arithmetic average,Calculate and interpret mean,"Grades, measurements",Sum/count,"mean of 5,7,7,9"
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Tyyppiarvo,vahvistetaan,Most frequent value,Find/interpret mode,Typical category/value,Frequency,mode of shoe sizes
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Frekvenssi,harjoitellaan,Number of occurrences,Count frequency,Surveys/statistics,Counting/categories,8 pupils chose football
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Suhteellinen frekvenssi,harjoitellaan,Fraction/percentage of observations,Calculate frequency relative to total,Polling/probability,Ratio/percentage,8/25 = 32%
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Mediaani,harjoitellaan,Middle ordered value,Determine median,Income/data with extremes,Ordering,"median of 2,3,5,20,100"
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Hajonta,tutustutaan,How spread out observations are,Understand that equal averages can hide different variation,"Weather, measurements, finance",Central value vs spread,"5,5,5 vs 1,5,9"
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Diagrammien tulkinta,harjoitellaan,Read graphical data critically,Extract information from common charts,News/media/science,Axes/scales/categories,interpret bar/line chart
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Diagrammien tuottaminen,harjoitellaan,Choose/create useful visualisation,Construct common charts,Communication,Chart choice/scales,plot survey results
+S6,"Tietojen käsittely, tilastot ja todennäköisyys",Todennäköisyys,lasketaan,Quantify chance,Calculate elementary probabilities,"Risk, games, prediction",Favourable/all outcomes,probability of rolling >4
