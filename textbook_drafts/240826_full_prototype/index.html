@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matematiikka 7-9 - minikirjaprototyyppi</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Matematiikka 7-9 - minikirjaprototyyppi</h1>
+      <p>
+        1 rivi = 1 minikappale. Rakenne: Miksi/Sanat -> Kuvitus -> Konkreettinen
+        esimerkki -> teoria.
+      </p>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Sisältö</h2>
+        <nav id="chapter-nav"></nav>
+      </aside>
+
+      <main class="content">
+        <article id="chapter-view" aria-live="polite">
+          <h2>Ladataan sisältöä...</h2>
+        </article>
+
+        <nav class="chapter-controls" aria-label="Lukunavigaatio">
+          <button id="prev-btn" type="button">Edellinen</button>
+          <span id="chapter-position"></span>
+          <button id="next-btn" type="button">Seuraava</button>
+        </nav>
+      </main>
+    </div>
+
+    <script src="./embedded_data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

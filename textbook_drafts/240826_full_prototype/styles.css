@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1c1d21;
+  background: #f4f6f9;
+  line-height: 1.65;
+}
+
+.topbar {
+  background: #1d3557;
+  color: #ffffff;
+  padding: 16px 22px;
+  border-bottom: 3px solid #14243b;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  min-height: calc(100vh - 84px);
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #d8dee8;
+  padding: 16px 14px 32px;
+  overflow: auto;
+}
+
+.sidebar h2 {
+  margin: 0 0 12px;
+  font-size: 1.02rem;
+}
+
+.area-block {
+  margin-bottom: 14px;
+}
+
+.area-heading {
+  margin: 0 0 7px;
+  font-size: 0.92rem;
+  color: #24486f;
+}
+
+.chapter-list {
+  display: grid;
+  gap: 4px;
+}
+
+.chapter-link {
+  display: block;
+  text-decoration: none;
+  color: #1f2329;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+.chapter-link:hover {
+  background: #edf3fb;
+}
+
+.chapter-link.active {
+  background: #d9e9ff;
+  font-weight: 600;
+}
+
+.content {
+  padding: 24px;
+}
+
+#chapter-view {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d9e0eb;
+  border-radius: 10px;
+  padding: 26px;
+}
+
+#chapter-view h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+#chapter-view h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.meta {
+  margin-top: 0;
+  color: #4f5f73;
+  font-size: 0.92rem;
+}
+
+.illustration {
+  border: 2px dashed #8aa8ca;
+  background: #f8fbff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.rule {
+  background: #f3f7fd;
+  border-left: 4px solid #5579a5;
+  padding: 10px 12px;
+  border-radius: 0 6px 6px 0;
+}
+
+.chapter-controls {
+  max-width: 900px;
+  margin: 14px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chapter-controls button {
+  border: 1px solid #b8c6d8;
+  background: #ffffff;
+  color: #203040;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.chapter-controls button:hover:enabled {
+  background: #edf3fb;
+}
+
+.chapter-controls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#chapter-position {
+  min-width: 92px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #425469;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #d8dee8;
+    max-height: 42vh;
+  }
+
+  .content {
+    padding: 14px;
+  }
+}
