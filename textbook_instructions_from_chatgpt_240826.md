@@ -4,94 +4,106 @@ Build a simple HTML/JavaScript prototype math textbook from:
 
 read_with_chatgpt/ops_math_7_9_S1_S6_matrix.json
 
-Use the JSON as the source of truth. Each row becomes exactly one mini-chapter.
+The JSON is the source of truth. One row = one mini-chapter = one new idea.
 
-Goal
+Audience and principle
 
-Create a textbook for almost everyone, especially pupils who are not naturally confident or interested in mathematics.
+Write for almost everyone, including pupils who do not naturally “get” mathematics.
 
-Each mini-chapter should explain one idea only, as clearly, concretely, and briefly as possible.
+Assume the reader is intelligent but may be confused, uninterested, or missing the intuition that makes the formal rule seem obvious.
 
-Do not add exercises yet.
+The main design rule is:
 
-Mini-chapter structure
+Question/need → words → image → concrete example → symbol/rule
 
-For every JSON row, present content in this exact order:
+Never begin with a formula when the idea can be understood first.
 
-WordsExplain the idea in plain everyday language. Avoid curriculum jargon unless the term itself must be learned. Keep this short.
+Every mini-chapter
 
-Illustration
+1. Why / Words
 
-Insert a placeholder description in square brackets, e.g.[Illustration: a thermometer showing +5 °C and -7 °C, with the distance to zero highlighted.]
+Start with the question the concept answers or the problem it solves.
 
-Example + theoryStart from a concrete, relatable example and use it to reveal the mathematical rule or theory.Prefer the row's application and example fields. Use theory only to explain what is genuinely needed.
+Explain the idea in a few plain sentences. Give the reader a mental hook. Use the Finnish mathematical term, but do not hide the idea behind terminology.
+
+2. Illustration
+
+Add one square-bracket placeholder that makes the idea visible:
+
+[Illustration: ...]
+
+The picture should explain something, not merely decorate the page.
+
+3. Concrete example → theory
+
+Use a natural concrete example, preferably based on the row's application and example.
+
+Work through it simply. Only after the idea is visible and understandable, state the general mathematical rule/symbolism from theory.
+
+If there is no honest everyday application, use a clear mathematical or geometric example instead. Never invent fake teenage relatability.
 
 Writing rules
 
-One row = one mini-chapter.
+One new idea at a time.
 
-One main idea per mini-chapter.
+Why before how.
 
-Make every explanation understandable without assuming mathematical enthusiasm.
+Language before image before symbol.
 
-Prefer concrete situations before abstraction.
+Keep cognitive load low.
 
-Use short sentences and ordinary words.
+Short, precise prose; no waffle.
 
 Explain symbols when they first appear.
 
-Never hide a simple idea behind formal terminology.
+Prefer ordinary situations where the mathematics genuinely matters.
 
-Avoid excessive background, history, side notes, caveats, or motivational waffle.
+Do not manufacture stories, characters, slang, jokes, “challenges”, or fake enthusiasm to sound young.
 
-Do not introduce concepts that belong to another row unless absolutely necessary.
+Write like a patient person thinking alongside the pupil, not lecturing.
 
-Do not invent harder mathematics than the JSON row requires.
+Anticipate the most tempting misunderstanding when it genuinely helps, and explain why it is tempting.
 
-Preserve the Finnish mathematical term as the chapter title or visible key term.
+Each mini-chapter should leave one memorable mental hook.
 
-The explanatory prose may be in clear Finnish unless otherwise specified.
+Do not introduce harder mathematics than the row requires.
+
+Preserve the Finnish mathematical term as the title/key term.
+
+Write the explanations in clear Finnish.
+
+Example of desired reasoning style
+
+For percentage change, do not start with a formula.
+
+Start with something like:
+
+“A price rises from €50 to €60. The change is €10. But is €10 a big increase? That depends on what the price was to begin with.”
+
+Then make the comparison visible, work through 10/50 = 1/5 = 20%, and only then generalize:
+
+percentage change = change / original value × 100%
+
+The example should create the need for the mathematics rather than being bolted onto a rule afterward.
 
 Interface
 
-Create a lightweight browser-based textbook using plain HTML, CSS, and JavaScript.
+Plain HTML, CSS and JavaScript.
 
-Requirements:
+Load the JSON dynamically.
 
-Read the JSON file dynamically.
+Group chapters under S1–S6 and show the content-area name.
 
-Group mini-chapters under S1–S6.
+Simple previous/next navigation.
 
-Show the content area name.
+Spacious, highly readable typography.
 
-Provide simple navigation between mini-chapters.
+Make illustration placeholders visually distinct.
 
-Keep typography spacious and highly readable.
+Content clarity matters more than visual polish.
 
-Keep visual design simple; content clarity matters more than polish.
+Not yet
 
-Illustration placeholders should be visually distinct so they can later be replaced by generated or drawn artwork.
+Do not add exercises, quizzes, answer fields, gamification, teacher material, assessment criteria, T1–T20 mappings, or extra curriculum interpretation.
 
-Important
-
-This is a content prototype, not a complete textbook.
-
-Do not add:
-
-exercises
-
-quizzes
-
-answer fields
-
-gamification
-
-teacher material
-
-assessment criteria
-
-T1–T20 mappings
-
-extra curriculum interpretation
-
-First make the 90 mini-chapters clear, concise, relatable, and internally consistent.
+First make the 90 ideas exceptionally clear.
